@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    border: 1px solid white;
+
+    
+}
+.container > button {
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: none;
+    border: 1px solid white;
+}
+.output{
+    grid-column: 1/-1;
+    background-color:aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.previous_operand{
+    font-size: 1.5rem;
+}
+.current_operand{
+    font-size: 2.5rem;
+}
+
+.span_two{
+    grid-column: span 2;
+}
